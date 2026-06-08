@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kingdom Fitness | Gym Nashik</title>
+
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial, sans-serif}
+    html{scroll-behavior:smooth}
+    body{background:#050505;color:white}
+
+    .hero{
+      min-height:100vh;
+      background:
+      linear-gradient(rgba(0,0,0,.75),rgba(0,0,0,.85)),
+      url("https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1600&q=80");
+      background-size:cover;
+      background-position:center;
+      display:flex;
+      align-items:center;
+      padding:40px 8%;
+    }
+
+    nav{
+      position:fixed;
+      top:0;
+      width:100%;
+      padding:18px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      background:rgba(0,0,0,.75);
+      backdrop-filter:blur(10px);
+      z-index:10;
+    }
+
+    nav h2{color:#ffcc00;letter-spacing:2px}
+    nav a{
+      color:white;
+      text-decoration:none;
+      margin-left:25px;
+      transition:.3s;
+    }
+    nav a:hover{color:#ffcc00}
+
+    .hero-content{max-width:700px;animation:fadeUp 1.2s ease}
+    .hero h1{
+      font-size:60px;
+      line-height:1.1;
+      text-transform:uppercase;
+    }
+    .hero h1 span{color:#ffcc00}
+    .hero p{
+      margin:25px 0;
+      font-size:20px;
+      color:#ddd;
+    }
+
+    .btn{
+      display:inline-block;
+      padding:15px 32px;
+      margin:10px 10px 10px 0;
+      border-radius:40px;
+      text-decoration:none;
+      font-weight:bold;
+      color:#000;
+      background:#ffcc00;
+      transition:.35s;
+      box-shadow:0 0 25px rgba(255,204,0,.35);
+    }
+    .btn:hover{
+      transform:translateY(-6px) scale(1.05);
+      box-shadow:0 0 40px rgba(255,204,0,.8);
+    }
+    .btn.dark{
+      background:transparent;
+      color:white;
+      border:2px solid #ffcc00;
+    }
+
+    section{padding:80px 8%}
+    .title{text-align:center;font-size:38px;margin-bottom:45px}
+    .title span{color:#ffcc00}
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:#111;
+      padding:30px;
+      border-radius:20px;
+      border:1px solid #222;
+      transition:.4s;
+    }
+    .card:hover{
+      transform:translateY(-12px);
+      border-color:#ffcc00;
+      box-shadow:0 0 35px rgba(255,204,0,.18);
+    }
+    .card h3{color:#ffcc00;margin-bottom:15px}
+    .card p{color:#ccc;line-height:1.6}
+
+    .about{
+      background:#0b0b0b;
+    }
+
+    .stats{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(180px,1fr));
+      gap:20px;
+      text-align:center;
+    }
+    .stat{
+      background:#111;
+      padding:25px;
+      border-radius:18px;
+      transition:.3s;
+    }
+    .stat:hover{transform:scale(1.06)}
+    .stat h2{color:#ffcc00;font-size:38px}
+
+    .contact{
+      background:
+      linear-gradient(rgba(0,0,0,.85),rgba(0,0,0,.9)),
+      url("https://images.unsplash.com/photo-1571902943202-507ec2618e8f?auto=format&fit=crop&w=1600&q=80");
+      background-size:cover;
+      background-position:center;
+      text-align:center;
+    }
+
+    .contact p{font-size:18px;margin:12px;color:#ddd}
+
+    footer{
+      text-align:center;
+      padding:25px;
+      background:#000;
+      color:#aaa;
+    }
+
+    @keyframes fadeUp{
+      from{opacity:0;transform:translateY(50px)}
+      to{opacity:1;transform:translateY(0)}
+    }
+
+    @media(max-width:700px){
+      .hero h1{font-size:42px}
+      nav a{display:none}
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h2>KINGDOM FITNESS</h2>
+    <div>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#plans">Plans</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Build Your <span>Strongest</span> Version</h1>
+      <p>Kingdom Fitness Gym, Nashik — best equipment, experienced trainers, diet support and budget-friendly plans.</p>
+
+      <a class="btn" href="tel:08668454851">Call Now</a>
+      <a class="btn dark" href="https://wa.me/918668454851" target="_blank">Join on WhatsApp</a>
+    </div>
+  </section>
+
+  <section id="about" class="about">
+    <h2 class="title">Why Choose <span>Kingdom Fitness?</span></h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Experienced Trainers</h3>
+        <p>Get proper guidance, workout correction and support from trained fitness coaches.</p>
+      </div>
+      <div class="card">
+        <h3>Modern Equipment</h3>
+        <p>Strength machines, cardio equipment and free weights for complete body transformation.</p>
+      </div>
+      <div class="card">
+        <h3>Diet Guidance</h3>
+        <p>Support for weight loss, muscle gain and healthy lifestyle with simple diet planning.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="stats">
+      <div class="stat">
+        <h2>4.9★</h2>
+        <p>Google Rating</p>
+      </div>
+      <div class="stat">
+        <h2>227+</h2>
+        <p>Reviews</p>
+      </div>
+      <div class="stat">
+        <h2>11 PM</h2>
+        <p>Open Till</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services">
+    <h2 class="title">Our <span>Services</span></h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Weight Training</h3>
+        <p>Build strength, muscle and confidence with proper training plans.</p>
+      </div>
+      <div class="card">
+        <h3>Cardio Training</h3>
+        <p>Improve stamina, burn calories and stay active every day.</p>
+      </div>
+      <div class="card">
+        <h3>Personal Guidance</h3>
+        <p>Beginner-friendly support for correct form and safe progress.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="plans">
+    <h2 class="title">Membership <span>Plans</span></h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Monthly Plan</h3>
+        <p>Perfect for beginners who want to start their fitness journey.</p>
+        <a class="btn" href="https://wa.me/918668454851" target="_blank">Ask Price</a>
+      </div>
+      <div class="card">
+        <h3>Quarterly Plan</h3>
+        <p>Best for serious transformation and regular training.</p>
+        <a class="btn" href="https://wa.me/918668454851" target="_blank">Ask Price</a>
+      </div>
+      <div class="card">
+        <h3>Yearly Plan</h3>
+        <p>Most value-for-money plan for long-term fitness goals.</p>
+        <a class="btn" href="https://wa.me/918668454851" target="_blank">Ask Price</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="title">Visit <span>Kingdom Fitness</span></h2>
+    <p>📍 Near Chakde Turf, Pakhal Road, Nashik, Maharashtra 422011</p>
+    <p>📞 086684 54851</p>
+    <p>⏰ Open till 11 PM</p>
+
+    <a class="btn" href="https://maps.google.com/?q=Kingdom+Fitness+Gym+Nashik" target="_blank">Get Directions</a>
+    <a class="btn dark" href="https://wa.me/918668454851" target="_blank">Book Trial</a>
+  </section>
+
+  <footer>
+    © 2026 Kingdom Fitness | Website Designed by Jay
+  </footer>
+
+</body>
+</html>
